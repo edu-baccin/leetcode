@@ -4,7 +4,4 @@ class Solution:
         y = reversed(x)
         y = "".join(y)
 
-        if y == x:
-            return True
-        else:
-            return False
+        return x == y
