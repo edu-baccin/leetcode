@@ -4,8 +4,8 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        a = bin(n)[2:]
-        a = list(str(a))
-        a = a.count("1")
-
-        return a
+        count = 0
+        while n:
+            n &= n - 1
+            count += 1
+        return count
