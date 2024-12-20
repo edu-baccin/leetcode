@@ -5,7 +5,7 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        if len(set(s)) != len(set(t)):
+        if len(s) != len(t):
             return False
         
         s_to_t = {}
